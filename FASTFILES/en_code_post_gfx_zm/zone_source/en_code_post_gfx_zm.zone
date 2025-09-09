@@ -1,0 +1,27 @@
+// Call Of Duty: Black Ops II
+>game,T6
+
+localize,en_code_post_gfx_zm
+techniqueset,sw4_2d_alphafont_3q76z816
+image,gamefonts_pc_720
+material,fonts/720/gamefonts_pc
+techniqueset,sw4_2d_alphafont_3340wf8q
+material,fonts/720/gamefonts_pc_glow
+font,fonts/720/consoleFont
+font,fonts/720/bigFont
+font,fonts/720/smallFont
+font,fonts/720/smallItalicFont
+font,fonts/720/italicFont
+font,fonts/720/boldFont
+font,fonts/720/normalFont
+font,fonts/720/extraBigFont
+font,fonts/720/extraSmallFont
+techniqueset,trivial_9z33feqw
+image,menu_mp_lobby_new
+material,menu_mp_lobby_new
+image,menu_mp_lobby_classified
+material,menu_mp_lobby_classified
+image,waypoint_revive
+material,waypoint_revive
+soundbank,cmn_root.english
+soundbank,zmb_code_post_gfx.english

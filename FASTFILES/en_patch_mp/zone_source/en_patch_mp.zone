@@ -1,0 +1,24 @@
+// Call Of Duty: Black Ops II
+>game,T6
+
+localize,en_patch_mp
+techniqueset,trivial_9z33feqw
+image,waypoint_flag_defend_circle
+material,waypoint_defend_flag
+image,waypoint_defuse_orange_a_circle
+material,waypoint_defuse_a
+image,waypoint_defuse_orange_b_circle
+material,waypoint_defuse_b
+image,waypoint_destroy_a_circle
+material,waypoint_destroy_a
+image,waypoint_destroy_b_circle
+material,waypoint_destroy_b
+image,waypoint_destroy_c_circle
+material,waypoint_destroy_c
+image,waypoint_destroy_d_circle
+material,waypoint_destroy_d
+image,white_waypoint_grab
+material,white_waypoint_grab
+image,menu_mp_lobby_new_small
+material,menu_mp_lobby_new_small
+soundbank,mpl_patch.english

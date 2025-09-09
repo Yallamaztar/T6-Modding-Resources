@@ -1,0 +1,11 @@
+// Call Of Duty: Black Ops II
+>game,T6
+
+techniqueset,,trivial_9z33feqw
+image,,waypoint_defuse
+material,compass_waypoint_defuse
+image,waypoint_defuse_a
+material,compass_waypoint_defuse_a
+image,waypoint_defuse_b
+material,compass_waypoint_defuse_b
+soundbank,mpl_common.english
