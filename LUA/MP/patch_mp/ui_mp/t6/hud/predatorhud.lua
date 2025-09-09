@@ -1,0 +1,48 @@
+CoD.PredatorHUD = {}
+CoD.PredatorHUD.new = function (f1_arg0)
+	local f1_local0 = CoD.AirVehicleHUD.new("predator", f1_arg0)
+	f1_local0:addCrosshairDistance("DIST")
+	f1_local0:addFakeHighAuto()
+	CoD.PredatorHUD.AddReticle(f1_local0, f1_arg0)
+	return f1_local0
+end
+
+CoD.PredatorHUD.AddReticle = function (f2_arg0)
+	f2_arg0:addCompass()
+	local f2_local0 = LUI.UIImage.new()
+	f2_local0:setLeftRight(false, false, -256, 256)
+	f2_local0:setTopBottom(false, false, -256, 256)
+	f2_local0:setImage(RegisterMaterial("mp_hud_sentry_inner"))
+	f2_arg0:addElement(f2_local0)
+	if CoD.IS_KILLCAM_OR_SPECTATE(controller) == 0 and UIExpression.IsDemoPlaying(controller) == 0 then
+		local f2_local1 = LUI.UIText.new()
+		f2_local1:setLeftRight(true, false, 0, 1)
+		f2_local1:setTopBottom(false, true, -CoD.textSize.Default, 0)
+		f2_local1:setText(Engine.Localize("KILLSTREAK_REMOTE_MISSILE_BOOST"))
+		f2_local1:setFont(CoD.fonts.Default)
+		f2_local1:setRGB(f2_arg0.colorR, f2_arg0.colorG, f2_arg0.colorB)
+		f2_arg0.leftButtonPrompts:addElement(f2_local1)
+		local f2_local2 = LUI.UIText.new()
+		f2_local2:setLeftRight(false, true, -1000, 0)
+		f2_local2:setTopBottom(false, true, -30 - CoD.textSize.Default, -30)
+		f2_local2:setText(Engine.Localize("KILLSTREAK_REMOTE_MISSILE_STEER"))
+		f2_local2:setFont(CoD.fonts.Default)
+		f2_local2:setAlignment(LUI.Alignment.Right)
+		f2_local2:setRGB(f2_arg0.colorR, f2_arg0.colorG, f2_arg0.colorB)
+		f2_arg0.rightButtonPrompts:addElement(f2_local2)
+		local f2_local3 = LUI.UIText.new()
+		f2_local3:setLeftRight(false, true, -1000, 0)
+		f2_local3:setTopBottom(false, true, -CoD.textSize.Default, 0)
+		f2_local3:setText(Engine.Localize("KILLSTREAK_REMOTE_MISSILE_DEPLOY"))
+		f2_local3:setFont(CoD.fonts.Default)
+		f2_local3:setAlignment(LUI.Alignment.Right)
+		f2_local3:setRGB(f2_arg0.colorR, f2_arg0.colorG, f2_arg0.colorB)
+		f2_arg0.rightButtonPrompts:addElement(f2_local3)
+	end
+	local f2_local1 = LUI.UIImage.new()
+	f2_local1:setLeftRight(false, false, -128, 128)
+	f2_local1:setTopBottom(false, false, 141, 269)
+	f2_local1:setImage(RegisterMaterial("mp_hud_cluster_status"))
+	f2_arg0:addElement(f2_local1)
+end
+
